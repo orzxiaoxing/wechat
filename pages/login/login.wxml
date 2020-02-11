@@ -1,0 +1,16 @@
+<form bindsubmit="onbindsubmit">
+  <view class="loginpage">
+    <input placeholder="请输入用户名" class="uname" name="username" placeholder-style="margin-left: 5px" maxlength="10"></input>
+  </view>
+  <view class="loginpage1">
+    <input placeholder="请输入密码" type="password" class="pwd" name="password" placeholder-style="margin-left: 5px" maxlength="10"></input>
+  </view>
+  <view class="inputpage">
+    <button form-type="submit" type="primary">登录</button>
+    <button style=" margin-top: 10px" bindtap="onbindtap">注册</button>
+  </view>
+</form>
+<view class="show" hidden="{{isshow}}">
+  <view>用户名:{{username}}</view>
+  <view>密码:{{password}}</view>
+</view>
